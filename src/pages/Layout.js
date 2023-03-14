@@ -3,6 +3,7 @@ import LeftBar from "../components/layout/LeftBar";
 import TopBar from "../components/layout/TopBar";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import DarkthemeProvider from "../context/DarkthemeProvider";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const Layout = () => {
 
           <section className="flex-grow">
             <TopBar />
+            <Outlet />
           </section>
         </div>
       </ProSidebarProvider>
