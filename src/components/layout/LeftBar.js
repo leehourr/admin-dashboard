@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Sidebar,
   Menu,
@@ -29,7 +29,14 @@ const LeftBar = ({ darkmode }) => {
   const [selected, setSelected] = useState("dashboard");
   const isDark = darkCtx.darktheme;
   const { collapseSidebar, collapsed } = useProSidebar();
+  // const mobileScreen = useMediaQuery({ query: "(max-width: 1000px)" });
 
+  // mobileScreen ? collapseSidebar() : collapseSidebar();
+  // useEffect(() => {
+  //   if (mobileScreen) {
+  //     collapseSidebar();
+  //   }
+  // }, [mobileScreen, collapseSidebar]);
   const MenuItemStyles = {
     button: {
       "&:hover": {

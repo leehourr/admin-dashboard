@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DashBoard from "./components/home/DashBoard";
+import DashBoard from "./components/home/dashborad/DashBoard";
 import Team from "./components/home/Team";
 import Contact from "./components/home/Contact";
 import Invoice from "./components/home/Invoice";

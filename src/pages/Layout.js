@@ -20,7 +20,7 @@ const Layout = () => {
         <div className="w-full text-lg h-screen flex items-start ">
           <LeftBar />
 
-          <section className="flex-grow">
+          <section className="flex-grow mx-5">
             <TopBar />
             <Outlet />
           </section>
