@@ -1,22 +1,17 @@
 import React from "react";
-import { ColorModeContext, useMode } from "./Theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import TopBar from "./scene/global/TopBar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./pages/Layout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [],
+  },
+]);
 
 function App() {
-  const [theme, colorMode] = useMode();
-  return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <div className="app">
-          <main className="content">
-            <TopBar />
-          </main>
-        </div>
-      </ThemeProvider>
-    </ColorModeContext.Provider>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
