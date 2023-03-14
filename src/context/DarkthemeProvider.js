@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DarkthemContext from "./Darktheme-context";
 
 const DarkthemeProvider = (props) => {
-  const [isDark, setIsDark] = useState(undefined);
+  const [isDark, setIsDark] = useState(false);
 
-  console.log("in provider", isDark);
+  // console.log("in provider", isDark);
+  useEffect(() => {
+    if (localStorage.getItem("dark")) {
+      setIsDark(true);
+    }
+  }, []);
+
   const toggleDarktheme = (toggle) => {
     setIsDark(toggle);
   };
