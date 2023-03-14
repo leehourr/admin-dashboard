@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-[#e0e0e0] dark:bg-black/80 text-black/70 dark:text-white/90 overflow-x-hidden;
+    @apply bg-[#e0e0e0] dark:bg-black/80 text-black/70 dark:text-white/90 overflow-hidden;
   }
 
   .hamburger-top,

@@ -17,10 +17,10 @@ const Layout = () => {
   return (
     <DarkthemeProvider>
       <ProSidebarProvider>
-        <div className="w-full text-lg h-screen flex items-start ">
+        <div className="w-full text-lg flex items-start ">
           <LeftBar />
 
-          <section className="flex-grow mx-5">
+          <section className="flex-grow mx-5 h-full ">
             <TopBar />
             <Outlet />
           </section>

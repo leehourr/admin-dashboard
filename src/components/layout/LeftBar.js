@@ -58,7 +58,7 @@ const LeftBar = ({ darkmode }) => {
   };
 
   return (
-    <div style={{ display: "flex", height: "100%" }}>
+    <div style={{ display: "flex", height: "100vh" }}>
       <Sidebar
         collapsed={collapsed}
         backgroundColor={isDark ? "#4E4F50" : "rgba(255,255,255,0.8)"}
