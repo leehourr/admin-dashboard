@@ -3,7 +3,7 @@ import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import DarkthemContext from "../../context/Darktheme-context";
 const LeftBar = ({ darkmode }) => {
   const darkCtx = useContext(DarkthemContext);
-  console.log("in left bar", darkCtx.darktheme);
+  // console.log("in left bar", darkCtx.darktheme);
   return (
     <div style={{ display: "flex", height: "100%" }}>
       <Sidebar
@@ -12,14 +12,7 @@ const LeftBar = ({ darkmode }) => {
         }
       >
         <Menu>
-          <SubMenu>
-            <MenuItem rootstyle={{ backgroundColor: "#4E4F50" }}>
-              Pie charts
-            </MenuItem>
-            <MenuItem> Line charts </MenuItem>
-          </SubMenu>
-          <MenuItem> Documentation </MenuItem>
-          <MenuItem> Calendar </MenuItem>
+          <MenuItem>Pie charts</MenuItem>
         </Menu>
       </Sidebar>
     </div>
