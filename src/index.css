@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
 @layer base {
   body {
-    @apply bg-[#e0e0e0] dark:bg-black/80 dark:text-white/90 overflow-x-hidden;
+    @apply bg-[#e0e0e0] dark:bg-black/80 text-black/70 dark:text-white/90 overflow-x-hidden;
   }
+
+  .hamburger-top,
+  .hamburger-bottom {
+    @apply absolute top-0 left-0 w-[22px] h-[2px] bg-black/70 dark:bg-white/70 transition-all duration-300;
+  }
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .input-dark {
