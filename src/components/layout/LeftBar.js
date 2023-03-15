@@ -177,9 +177,9 @@ const LeftBar = ({ darkmode }) => {
             </h1>
             <Item
               collapsed={collapsed}
-              title="Profile Form"
+              title="Register Form"
               icon={<PersonOutlinedIcon />}
-              to="/form"
+              to="/register"
               selected={selected}
               setSelected={setSelected}
               collapseHandler={collapseHandler}
