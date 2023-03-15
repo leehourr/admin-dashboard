@@ -3,7 +3,7 @@ import { mockDataInvoices } from "../../data/MockData";
 import Header from "../Ui/Header";
 
 const Contacts = () => {
-  console.log(mockDataInvoices);
+  // console.log(mockDataInvoices);
   return (
     <div className="h-full">
       <Header title="TEAM" subtitle="Managing The Team Members" />

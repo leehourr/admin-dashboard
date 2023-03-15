@@ -6,7 +6,7 @@ import { SecurityOutlined } from "@mui/icons-material";
 import Header from "../Ui/Header";
 
 const Team = () => {
-  console.log(mockDataTeam);
+  // console.log(mockDataTeam);
 
   return (
     <div className="h-full">
