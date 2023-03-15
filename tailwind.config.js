@@ -10,6 +10,7 @@ module.exports = {
       addVariant("child", "& > *");
       addVariant("child-hover", "& > *:hover");
     },
+    require("daisyui"),
     // require("tailwind-scrollbar")({ nocompatible: true }),
   ],
 };

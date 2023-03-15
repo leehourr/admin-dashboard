@@ -21,7 +21,9 @@ const Layout = () => {
           <LeftBar />
 
           <section className="flex-grow mx-5 h-full ">
-            <TopBar />
+            <div className="w-full">
+              <TopBar />
+            </div>
             <Outlet />
           </section>
         </div>
