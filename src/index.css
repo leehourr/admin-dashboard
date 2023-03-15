@@ -9,6 +9,10 @@
     @apply bg-[#e0e0e0] dark:bg-[#333333] text-black/70 dark:text-white/90 overflow-hidden;
   }
 
+  .neumorphism {
+    @apply w-1/4 p-3 shadow-[5px_5px_7px_rgba(0,0,0,0.2),-5px_-5px_9px_rgba(255,255,255,10)] dark:shadow-[_10px_10px_20px_rgba(43,43,43),-5px_-5px_9px_rgba(59,59,59)];
+  }
+
   .hamburger-top,
   .hamburger-bottom {
     @apply absolute top-0 left-0 w-[22px] h-[2px] bg-black/70 dark:bg-white/70 transition-all duration-300;

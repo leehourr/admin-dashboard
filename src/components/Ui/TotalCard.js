@@ -1,6 +1,6 @@
 import React from "react";
 
-const TotalCard = () => {
+const StatCard = () => {
   return <div>TotalCard</div>;
 };
 

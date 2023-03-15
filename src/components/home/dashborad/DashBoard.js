@@ -6,6 +6,7 @@ import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../Ui/Header";
 import ProgressCircle from "../../Ui/ProgressCircle";
+import StatCard from "../../Ui/StatCard";
 
 const DashBoard = () => {
   return (
@@ -17,10 +18,45 @@ const DashBoard = () => {
           <span className="uppercase"> Download reports</span>
         </button>
       </header>
-      <main>
-        <div className="">
-          <ProgressCircle />
-        </div>
+      <main className="mt-5">
+        <section className="w-full flex items-center gap-10 justify-between">
+          <div className="neumorphism w-1/4">
+            <StatCard
+              icon={<EmailIcon />}
+              amount="12,341"
+              title="Emails Sent"
+              value="14"
+              angle="70"
+            />
+          </div>
+          <div className="neumorphism w-1/4">
+            <StatCard
+              icon={<PointOfSaleIcon />}
+              amount="432,341"
+              title="Sales Obtained"
+              value="21"
+              angle="45"
+            />
+          </div>
+          <div className="neumorphism w-1/4">
+            <StatCard
+              icon={<PersonAddIcon />}
+              amount="43,341"
+              title="New Clients"
+              value="5"
+              angle="35"
+            />
+          </div>
+          <div className="neumorphism w-1/4">
+            <StatCard
+              icon={<TrafficIcon />}
+              amount="132,143,341"
+              title="Traffic Received"
+              value="43"
+              angle="85"
+            />
+          </div>
+        </section>
       </main>
     </div>
   );

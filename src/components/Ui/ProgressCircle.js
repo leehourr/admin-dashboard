@@ -4,7 +4,7 @@ const ProgressCircle = ({ angle }) => {
   return (
     <div
       className="radial-progress text-cyan-700 dark:text-cyan-400"
-      style={{ "--value": 70 }}
+      style={{ "--value": `${angle}` }}
     >
       {angle}%
     </div>
