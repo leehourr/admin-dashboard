@@ -9,7 +9,7 @@ import Calendar from "./components/home/Calendar";
 import Faq from "./components/home/Faq";
 import BarChart from "./components/home/BarChart";
 import LineChart from "./components/home/LineChart";
-import Geography from "./components/home/Geography";
+import Geography from "./components/home/Geo";
 
 import Layout from "./pages/Layout";
 

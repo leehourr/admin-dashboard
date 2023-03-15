@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../../Ui/Header";
-import LineChart from "./LineChart";
+import Geography from "./Geography";
 
 const index = () => {
   return (
     <div>
-      <Header title="Line Chart" subtitle=" Simple Line Chart" />
+      <Header title="Geography Chart" subtitle=" Simple Geography Chart" />
       <div className="h-[75vh] text-black">
-        <LineChart />
+        <Geography />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Header title="Bar Chart" subtitle="Simple Bar Chart" />
-      <div className="h-[74vh]">
+      <div className="h-[74vh] text-black">
         <BarChart />
       </div>
     </div>
